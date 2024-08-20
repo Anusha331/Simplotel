@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Arial";
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+}
+
+.navbar {
+    width: 98%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.icons {
+    width: 22px;
+    height: 22px;
+    border: solid 2px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.icon-image {
+    width: 12px;
+}
+
+li {
+    display: none;
+}
+
+a {
+    color: #191919;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.burger-icon {
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (min-width:768px) {
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        font-size: 18px;
+        font-weight: 600;
+        display: inline;
+        margin-right: 20px;
+        align-self: auto;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    li {
+        font-size: 22px;
+    }
+}
+
+.about-hotel {
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/dnoih6kpd/image/upload/v1724168252/heroimg_l7ra5i.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hotel-name {
+    color: #ececec;
+    font-size: 14px;
+    font-weight: 600;
+    width: 180px;
+    height: 28px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #000000, #707070);
+}
+
+.hotel-description {
+    width: 100%;
+    color: #1e1e1e;
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    background-color: #b2b2b2;
+    gap: 10px;
+    padding: 12px;
+}
+
+@media screen and (min-width:576px) {
+    .hotel-description {
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hotel-description {
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (min-width:992px) {
+    .hotel-description {
+        font-size: 20px;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hotel-description {
+        gap: 20px;
+
+    }
+}
+
+.hotel-overview {
+    min-height: 20vh;
+    width: 100%;
+    padding: 20px;
+    background-color: #dad6df;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.facilities {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.facilities-description {
+    font-size: 14px;
+    width: 90%;
+}
+
+button {
+    width: 110px;
+    height: 32px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #000000;
+
+}
+
+.dining-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pool-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+@media screen and (min-width:768px) {
+    .facilities {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image {
+        width: 98%;
+    }
+
+    .facilities-description {
+        font-size: 18px;
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .facilities-description {
+        font-size: 20px;
+
+    }
+}
